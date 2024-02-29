@@ -5,7 +5,7 @@ export async function fetchData(payload) {
   const currentDate = new Date().toISOString().slice(0, 10).replace(/-/g, "");
 
   const response = await axios.request({
-    url: `http://api.valantis.store:40000/`,
+    url: `https://api.valantis.store:41000/`,
     method: "POST",
     headers: {
       "X-Auth": md5(`Valantis_${currentDate}`),
